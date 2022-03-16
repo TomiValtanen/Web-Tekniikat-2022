@@ -1,0 +1,1 @@
+Tässä repositorissa on wek-tekniikan koodi asiat.
