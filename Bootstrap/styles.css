@@ -1,0 +1,22 @@
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+[class*="col"] {/*.row > * */
+    border: black 1px solid;
+    background-color: orange;
+}
+.sidebar [class*="col"]{
+    border: none;
+    background-color: transparent;
+}
+form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#fname{
+    border: black 1px solid;
+}
+.alert {
+    display: none;
+}
