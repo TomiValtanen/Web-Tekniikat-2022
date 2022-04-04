@@ -1,0 +1,1 @@
+Ui harjoituksessa tutkittiin taustan värin vaihtamista , padding , margin, font family ym.
