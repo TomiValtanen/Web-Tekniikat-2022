@@ -1,0 +1,19 @@
+.card-image{
+    height: 60px;
+    width: 25%;
+    align-self: center;   
+}
+
+.tavoitteet{
+    height: 60vh;
+    
+}
+.koulutus{
+    height: 60vh;
+}
+.työkokemus{
+    height: 60vh;
+}
+.osaaminen{
+    height: 60vh;
+}
