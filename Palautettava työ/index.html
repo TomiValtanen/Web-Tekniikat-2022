@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -23,35 +23,40 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item pe-5">
-            <a class="nav-link active" aria-current="page" href="#">Tavoitteet</a>
+            <a class="nav-link active" aria-current="page" href="#section1">Tavoitteet</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link active" href="#">Koulutus</a>
+            <a class="nav-link active" href="#section2">Koulutus</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link active" href="#">Työkokemus</a>
+            <a class="nav-link active" href="#section3">Työkokemus</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link active" href="#">Osaaminen</a>
+            <a class="nav-link active" href="#section4">Osaaminen</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container-fluid">
+  <div class="container-fluid min-vh-100">
     <div class="row">
       <div class="col">
-        <h1>Tomi Valtanen</h1>
-        <p>Hei olen tietojenkäsittely tradenomi opiskelija. Tällä sivustolla tulen kertomaan
+        <h1 class="intro-h1">Tomi Valtanen</h1>
+        <p class="intro-custom">Hei olen tietojenkäsittely tradenomi opiskelija. Tällä sivustolla tulen kertomaan
           omista tavoitteistani , koulutuksestani, työkokemuksesta ja koulussa opituista menetelmistä.
-          <img class="esittely-img" src="./images/splash-g796bfc7c4_640.png" alt="splash"></p>
+          Tämä on harjoitus portfolio itselle, erilaisilla kokeiluilla ja miltä asiat näyttävät. Osaan aiheista en välttämättä ole keksinyt kaikkea  mitä kirjoittaa ja siitä syystä osa teksteistä voi olla lyhkäisiä.
+            Harjoitusta myös siihen suuntaan mitä kertoa tämmöisessä itsestään. Etenkin opiskelujen alkuvaiheessa. Samalla vähän harjoittelua miten tuoda sitä omaa osaamista esille tämmöisellä.
+          </p>
+          <img class="esittely-img mx-auto" src="./images/speech-bubble-ga6762824d_1280.png" alt="splash">
+          
+          
         
       </div>
     </div>
   </div>
-  <div class="container-fluid tavoitteet">
+  <div  class="container-fluid tavoitteet">
     <div class="row">
-      <div class="col-12">
+      <div id="section1"class="col-12">
         <h1 class="text-center">Tavoitteet</h1>
         <p class="text-center mx-sm-5 mx-1">Aikaisempaa kokemusta ei itselläni ole alalta. Koodaaminen on kiinnostanut pitemmän aikaa
           ja nyt siihen sain tilaisuuden
@@ -86,33 +91,32 @@
       </div>
       <div class="col">
         <div class="card p-3">
-          <img class="card-img-top card-image" id="controllerImg" class="card-img-top"
+          <img class="card-img-top card-image" id="controllerImg"
             src="./images/controller-g172d03d36_640.png" alt="controller">
           <div class="card-body">
-            <h3 class="text-center">Pelienkehitys</h3>
-            <p class="text-center">Itsellä ei ole juurikaan tietoa miten tämä itse prosessi menee ja mitä kaikkea se sisältää.</p>
+            <h3 class="text-center">Harrastukset</h3>
+            <p class="text-center">Lautapelit ja pelit ylipäätänsä ovat olleet suuressa osassa.</p>
             <a class="btn btn-primary" href="#" role="button">Lue lisää</a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
-  <div class="container-fluid">
+  <div  class="container-fluid">
     <div class="row">
-      <div class="col koulutus ">
+      <div id="section2" class="col koulutus ">
         <h1 class="text-center">Koulutus</h1>
           <p class="text-center mx-sm-5 mx-1"> Koulutuksesta lyhyesti tässä. Olen käynyt ensimmäisenä koulutuksenani kaksois tutkinnon ja ammatillinen puoli siellä oli rakennusala. Armeijessa pääsin kokeilemaan hammashoitajan hommia
             mikä antoi kiinostusta lähihoitajan ammattikuvasta. Armeijan jälkeen lähdin kohti uutta ammattia ja opiskelin itseni lähihoitajaksi. Jossain kohtaa kiinnostukseen tuli myös
             hierojan ura ja muutettuani ouluun opiskelin itseni urheilu hierojaksi. Alta tarkemmin vuosista milloin olen suorittanut kyseisiä opintoja ja tarkennuksia.
           </p>
-        <a class="btn btn-primary" href="#" role="button">Lue lisää</a>
+        <a class="btn btn-primary" href="./pages/koulutus.html" role="button">Lue lisää</a>
       </div>
     </div>
   </div>
-  <div class="container-fluid työkokemus">
+  <div  class="container-fluid työkokemus">
     <div class="row">
-      <div class="col">
+      <div id="section3" class="col">
         <h1 class="text-center">Työkokemus</h1>
         <p class="text-center mx-sm-5 mx-1">Työkokemuksesta lyhyesti tässä. Kaikenlaista on tullut kokeiltua ja ihmeteltyä vuosien aikana. Rakennuksilla olen ollut vähäisesti töissä ja siellä se oli enempi
           kesätyö hommia ennen armeijaa. Armeijassa olin lääkintamiehenä 9 kuukautta erilaisissa tehtävissä mm. hammashoitajana. Sen jälkeen olen enemmän ja vähemmän ollut lähihoitajan
@@ -123,9 +127,9 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid osaaminen">
+  <div  class="container-fluid osaaminen">
     <div class="row">
-      <div class="col">
+      <div id="section4" class="col">
         <h1 class="text-center">Osaaminen</h1>
         <p class="text-center mx-sm-5 mx-1">Tämän hetkistä osaamista , mitä olen oppinut tradenomi opintojeni aikana ja asioita mitä olemme tunnilla
           tehneet.</p>
@@ -159,12 +163,19 @@
       </div>
     </div>
   </div>
-    <div class="container-fluid bg-dark text-white">
-      <div class="row">
-        <div class="col">
-          <p class="text-center">Tietojen käsittely tradenomi</p>
-        </div>
-      </div>
+    <div class="container">
+        <footer class="py-3 my-3">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <il class="nav-item"><a href="#" class="nav-link px-2 text-muted">Alkuun</a></il>
+            <il class="nav-item"><a href="#section1" class="nav-link px-2 text-muted">Tavoitteet</a></il>
+            <il class="nav-item"><a href="#section2" class="nav-link px-2 text-muted">Koulutus</a></il>
+            <il class="nav-item"><a href="#section3" class="nav-link px-2 text-muted">Työkokemus</a></il>
+            <il class="nav-item"><a href="#section4" class="nav-link px-2 text-muted">Osaaminen</a></il>
+
+          </ul>
+          <p class="text-center text-muted">© 2022 , Tietojenkäsittely tradenomi</p>
+
+        </footer>
     </div>
 
 
