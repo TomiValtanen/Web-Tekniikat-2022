@@ -51,13 +51,19 @@ p{
     align-self: center;   
     filter: invert(100%);
 }
+.accordion-header button{
+    font-weight: 500;
+    font-size: large;
+}
 .accordion-custom{
     color: black;
     width: 65%;
+    
   }
   .accordion-body p{
       color: black;
   }
+
   .header-custom{
       background-color: orange;
      
