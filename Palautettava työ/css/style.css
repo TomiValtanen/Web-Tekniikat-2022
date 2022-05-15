@@ -266,6 +266,9 @@ color: black;
     animation: ball 9s  infinite;
     animation-timing-function: linear;
 }
+#työhommat p{
+    text-align:left ;
+}
 
 @keyframes ball {
 
