@@ -3,15 +3,15 @@ button.addEventListener("click", workExp);
 
 let workPlaces = [
     {
-        workPlaceName: "Raksa1",
-        timeSpent: "1 viikko",
-        duties: "Apupoika",
+        workPlaceName: "Ristijärven rakennus oy",
+        timeSpent: "3 viikkoa",
+        duties: "Saneeraustyömaalla rakennusapumiehenä",
 
     },
     {
         workPlaceName: "Koulunkäynti avustaja",
-        timeSpent: "4kk",
-        duties: "Tunneilla ohjastaminen ja auttaminen.Työhön tutustuminen",
+        timeSpent: "1kk",
+        duties: "Avustajana toimiminen yleisopetuksen luokissa. Lisäksi avustajana erityisopetuksen luokissa.",
 
     },
     {
@@ -21,15 +21,27 @@ let workPlaces = [
 
     },
     {
-        workPlaceName: "Henkilökohtainen avustaja",
-        timeSpent: "6kk",
-        duties: "Salillla käyminen ja ohjelman tekeminen. Avustaminen laitteissa ja uimassa käyminen.",
+        workPlaceName: "Terveystalo julkisetpalvelut oy",
+        timeSpent: "3,5 vuotta",
+        duties: "Lähihoitajan toimenkuva. Lääkehoito, jokapäiväiset askareet , ruuanlaitto ja henkilön omien menojen mukaiset toimet.",
 
     },
     {
-        workPlaceName: "Terveystalo",
-        timeSpent: "3 vuotta",
-        duties: "Lähihoitajan toimenkuva. Lääkehoito, jokapäiväiset askareet , ruuanlaitto ja henkilön omien menojen mukaiset toimet.",
+        workPlaceName: "Sotilaslääketieteen keskuksessa, Kajaanin varuskunnan terveysaseman hammaspoliklinikalla",
+        timeSpent: " 5kk",
+        duties: "Instrumenttihuolto, ajanvaraus ja hammaslääkärin avustaminen",
+
+    },
+    {
+        workPlaceName: "Rakennusliike halonen oy",
+        timeSpent: " 2kk",
+        duties: "Rakennusapumiehenä",
+
+    },
+    {
+        workPlaceName: "Hieroja yrittäjänä",
+        timeSpent: " 1v",
+        duties: "Hierojan toimenkuvaan liittyvät työtehtävä",
 
     }
 ];
