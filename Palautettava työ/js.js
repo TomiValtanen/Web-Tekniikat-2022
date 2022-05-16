@@ -1,53 +1,58 @@
-let button = document.querySelector("#section3 a");
-button.addEventListener("click", workExp);
+
 
 let workPlaces = [
     {
         workPlaceName: "Ristijärven rakennus oy",
         timeSpent: "3 viikkoa",
         duties: "Saneeraustyömaalla rakennusapumiehenä",
+        class:"raksa",
 
     },
     {
         workPlaceName: "Koulunkäynti avustaja",
         timeSpent: "1kk",
         duties: "Avustajana toimiminen yleisopetuksen luokissa. Lisäksi avustajana erityisopetuksen luokissa.",
-
+        class:"muu",
     },
     {
         workPlaceName: "Mehiläinen , Tipaskoti",
         timeSpent: "2 vuotta",
         duties: "Lähihoitajan toimenkuva. Lääkehoito. Vanhusten viriketuokiot, ruuanlaitto ja siivoaminen",
-
+        class:"lähihoitaja",
     },
     {
         workPlaceName: "Terveystalo julkisetpalvelut oy",
         timeSpent: "3,5 vuotta",
         duties: "Lähihoitajan toimenkuva. Lääkehoito, jokapäiväiset askareet , ruuanlaitto ja henkilön omien menojen mukaiset toimet.",
-
+        class:"lähihoitaja",
     },
     {
-        workPlaceName: "Sotilaslääketieteen keskuksessa, Kajaanin varuskunnan terveysaseman hammaspoliklinikalla",
+        workPlaceName: "Kajaanin varuskunnan terveysasema",
         timeSpent: " 5kk",
-        duties: "Instrumenttihuolto, ajanvaraus ja hammaslääkärin avustaminen",
-
+        duties: "Armeijan aikana pääsin olemaan hammaspoliklinikalla. Siellä työhön kuului instrumenttihuolto, ajanvaraus ja hammaslääkärin avustaminen",
+        class:"muu",
     },
     {
         workPlaceName: "Rakennusliike halonen oy",
         timeSpent: " 2kk",
         duties: "Rakennusapumiehenä",
-
+        class:"raksa",
     },
     {
         workPlaceName: "Hieroja yrittäjänä",
         timeSpent: " 1v",
         duties: "Hierojan toimenkuvaan liittyvät työtehtävä",
-
+        class:"muu",
     }
 ];
 
+let button = document.querySelector("#section3 a");
+button.addEventListener("click", workExp);
+
 function workExp() {
+
     button.style.display = "none";
+    document.querySelector("form").style.display="block";
 
     let divWork = document.querySelector("#section3");
     let span = document.createElement("span");
@@ -69,5 +74,55 @@ function workExp() {
 
     divWork.appendChild(span);
     document.getElementById("työhommat").innerHTML = newDiv;
-
+    let cardDiv= document.querySelectorAll("#työhommat div.col");
+    for (let i=0;i<cardDiv.length;i++){
+        cardDivArray.push(cardDiv[i]);
+    }
+    
+    
 }
+let cardDivArray=[];
+
+let form= document.querySelector("form");
+form.addEventListener("change",formInput);
+
+function formInput(event){
+    
+
+if (event.target.id=="hoitaja"){
+    for(let i=0; i<workPlaces.length;i++){
+        if(workPlaces[i].class=="lähihoitaja"){
+            cardDivArray[i].style.display="block";
+        }
+        else {
+            cardDivArray[i].style.display="none";
+        }
+    }
+}
+else if (event.target.id=="rakennusala"){
+    for(let i=0; i<workPlaces.length;i++){
+        if(workPlaces[i].class=="raksa"){
+            cardDivArray[i].style.display="block";
+        }
+        else {
+            cardDivArray[i].style.display="none";
+        }
+    }
+}
+else if (event.target.id=="muu"){
+    for(let i=0; i<workPlaces.length;i++){
+        if(workPlaces[i].class=="muu"){
+            cardDivArray[i].style.display="block";
+        }
+        else {
+            cardDivArray[i].style.display="none";
+        }
+    }
+}
+else{
+    for(let i=0; i<workPlaces.length;i++){
+        cardDivArray[i].style.display="block";
+    }
+}
+}
+
