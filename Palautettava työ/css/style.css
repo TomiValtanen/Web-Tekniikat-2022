@@ -266,7 +266,6 @@ color: black;
     animation: ball 9s  infinite;
     animation-timing-function: linear;
 }
-
 #työhommat p{
     text-align:left;
     background:linear-gradient(to bottom,rgb(255, 224, 165),rgb(255, 236, 200));
@@ -291,6 +290,11 @@ form{
     text-align: center;
     color: white;
     display: none;
+}
+form input:checked + label{
+    color: orange;
+    border-bottom: orange 1px solid;
+    
 }
 
 @keyframes ball {
