@@ -17,3 +17,9 @@ h3{
     color: orange;
     border-bottom: darkmagenta 1px solid;
 }
+span div img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
