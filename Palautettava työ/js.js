@@ -46,7 +46,7 @@ let workPlaces = [
     }
 ];
 
-let button = document.querySelector("#section3 a");
+let button = document.querySelector("#section3 button");
 button.addEventListener("click", workExp);
 
 function workExp() {
@@ -61,7 +61,7 @@ function workExp() {
     let newDiv = '<div class="row row-cols-1 row row-cols-sm-2  row-cols-lg-3 my-3 mx-5 ">';
     for (let i = 0; i < workPlaces.length; i++) {
         newDiv += '<div class="col my-3 my-sm-1">'; 
-        newDiv += '<div class="card p-3 mx-1"">';
+        newDiv += '<div class="card p-3 mx-1">';
         newDiv += '<div class="card-body">';
         newDiv += "<h5>" + workPlaces[i].workPlaceName + "</h5>";
         newDiv += "<h6>" + workPlaces[i].timeSpent + "</h6>";

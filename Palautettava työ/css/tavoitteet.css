@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right bottom, black 55%, rgb(97, 0, 92));
+}
+h1 {
+    color: orange;
+    padding-top: 15px;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+h3{
+    color: orange;
+    border-bottom: darkmagenta 1px solid;
+}
