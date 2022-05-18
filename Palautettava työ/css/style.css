@@ -39,6 +39,23 @@ p {
     margin-right: 50%;
     margin-left: 2%;
 }
+@media screen and (max-width:475px){
+    .intro-h1{
+        top: 10%;
+    }
+    .intro-custom{
+        text-align: left;
+        top: 20%;
+        margin-right: 25%;
+    }
+}
+@media screen and (max-width:340px){
+    .intro-custom{
+        margin: 0;
+        
+    }
+}
+
 
 .tavoitteet a {
     position: absolute;
@@ -176,6 +193,7 @@ p {
 
 .card {
     background-color: rgb(255, 145, 0);
+    height: 100%
 }
 
 /*Elements*/
@@ -275,6 +293,14 @@ p {
     height: 150px;
     padding: 10px;
     margin: 5px;
+    width: auto;
+}
+@media screen and (max-width:340px){
+    #työhommat p{
+        hyphens: auto;
+        font-size: 15px;
+        height: 180px;
+    } 
 }
 
 #työhommat h5 {

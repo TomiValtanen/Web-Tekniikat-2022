@@ -5,7 +5,7 @@ html {
 body {
     background: linear-gradient(to right bottom, black 55%, rgb(97, 0, 92));
 }
-h1 {
+h1, h2{
     color: orange;
     padding-top: 15px;
 }
@@ -22,4 +22,21 @@ span div img{
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+}
+.mietteitä{
+    display: none;
+}
+.persoona{
+    display: block;
+}
+.more{
+    display: none;
+}
+button{
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+button:hover{
+    color: darkmagenta;
 }
