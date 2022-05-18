@@ -29,9 +29,6 @@ span div img{
 .persoona{
     display: block;
 }
-.more{
-    display: none;
-}
 button{
     border: none;
     color: white;
@@ -39,4 +36,41 @@ button{
 }
 button:hover{
     color: darkmagenta;
+}
+.blog-post p:nth-child(3){
+    overflow: hidden;
+    transition: max-height 1s;
+    max-height: 75px;
+}
+.blog-post p:nth-child(3).collapsePara{
+    max-height: 600px;
+}
+#wow{
+    height: 200px;
+    float: right;
+    width: auto;
+    border: orange 2px solid;
+    
+}
+p.img-text{
+    text-align: justify;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+   width: 100%;
+   background: linear-gradient(to right, black 40%, rgb(97, 0, 92));
+   border: darkmagenta 2px solid;
+  }
+  .modal {
+    display: none; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+    
+  }
+.modal-footer{
+    border-top: darkmagenta 2px solid;
+}
+.modal-header{
+    border-bottom: darkmagenta 2px solid;
 }
