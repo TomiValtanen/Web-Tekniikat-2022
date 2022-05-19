@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right bottom, black 55%, rgb(97, 0, 92));
+}
+h1, h2{
+    color: orange;
+    padding-top: 15px;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+h3{
+    color: orange;
+    border-bottom: darkmagenta 1px solid;
+}
+span div img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.persoona{
+    display: block;
+}
+
+#wow{
+    height: 200px;
+    float: right;
+    width: auto;
+    border: orange 2px solid;
+    
+}
+p.img-text{
+    text-align: justify;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+   width: 100%;
+   background: linear-gradient(to right, black 40%, rgb(97, 0, 92));
+   border: darkmagenta 2px solid;
+  }
+  .modal {
+    display: none; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+    
+  }
+.modal-footer{
+    border-top: darkmagenta 2px solid;
+}
+.modal-header{
+    border-bottom: darkmagenta 2px solid;
+}
+

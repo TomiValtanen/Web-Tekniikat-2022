@@ -24,11 +24,9 @@ span div img{
     margin-bottom: 10px;
 }
 .mietteitä{
-    display: none;
+    display: flex;
 }
-.persoona{
-    display: block;
-}
+
 button{
     border: none;
     color: white;
@@ -45,35 +43,7 @@ button:hover{
 .blog-post p:nth-child(3).collapsePara{
     max-height: 600px;
 }
-#wow{
-    height: 200px;
-    float: right;
-    width: auto;
-    border: orange 2px solid;
-    
-}
-p.img-text{
-    text-align: justify;
-}
-.modal-content {
-    margin: auto;
-    display: block;
-   width: 100%;
-   background: linear-gradient(to right, black 40%, rgb(97, 0, 92));
-   border: darkmagenta 2px solid;
-  }
-  .modal {
-    display: none; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); 
-    
-  }
-.modal-footer{
-    border-top: darkmagenta 2px solid;
-}
-.modal-header{
-    border-bottom: darkmagenta 2px solid;
-}
+
 .sticky{
     position: sticky;
     top: 0;
@@ -101,4 +71,25 @@ p.img-text{
 }
 .sticky a:hover{
     color: orange;
+}
+.pagination{
+    float: right;
+
+    
+}
+.pagination li{
+    
+}
+.pagination a{
+    background-color: transparent;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: darkmagenta;
+    font-size: 18px;
+    
+    
+}
+.pagination a:hover{
+    color: orange;
+    text-decoration: underline;
 }

@@ -1,19 +1,3 @@
-let persoona = document.querySelector("#navUl li:nth-child(2)");
-let mietteitä = document.querySelector("#navUl li:last-child");
-
-
-persoona.addEventListener("click", openPersoona);
-mietteitä.addEventListener("click", openMietteitä);
-
-function openPersoona() {
-    document.querySelector("div.mietteitä").style.display = "none";
-    document.querySelector("div.persoona").style.display = "block";
-}
-
-function openMietteitä() {
-    document.querySelector("div.persoona").style.display = "none";
-    document.querySelector("div.mietteitä").style.display = "flex";
-}
 
 /*Tälläistä myös olin ajatellut , mutta laitoin sitten tuon toisen kun tahoin transition 
 ,että se olisi omasta mielestä hieman smoothimpi eikä töks töks. HTML puolella sitten oli noi
@@ -51,21 +35,3 @@ function readMore(site){
       }
 }
 
-let modal=document.querySelector(".modal");
-var img = document.querySelector("#wow");
-var modalImg = document.getElementById("img01");
-
-img.addEventListener("click",modalOpen);
-
-function modalOpen(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  }
-
-let modalBtn=document.querySelector(".modal button");
-let modalBtnClose=document.querySelector("div.modal-footer button");
-modalBtn.addEventListener("click",closeModal);
-modalBtnClose.addEventListener("click",closeModal);
-function closeModal(){
-    modal.style.display = "none";
-}
