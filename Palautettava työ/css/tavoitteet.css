@@ -74,3 +74,31 @@ p.img-text{
 .modal-header{
     border-bottom: darkmagenta 2px solid;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+
+ 
+    
+    
+}
+.sticky h4{
+    color: orange;
+    text-decoration: underline;
+}
+.sticky ol{
+    margin: 0px;
+    padding-left: 0px;
+}
+.sticky li{
+    list-style: none;
+    margin: 0px;
+}
+.sticky a{
+    color: rgb(197, 68, 197);
+    font-size: 18px;
+    
+}
+.sticky a:hover{
+    color: orange;
+}

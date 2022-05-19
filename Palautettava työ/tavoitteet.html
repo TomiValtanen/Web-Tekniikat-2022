@@ -29,13 +29,13 @@
                         <a class="nav-link active" href="#">Persoona</a>
                     </li>
                     <li class="nav-item pe-5">
-                        <a class="nav-link active"href="#" >Mietteitä elämästä</a>
+                        <a class="nav-link active" href="#">Mietteitä elämästä</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container min-vh-100">
+    <div class="container">
 
         <div class="p-4 p-md-5 mb-4 rounded">
             <div class="row row-cols-2">
@@ -81,31 +81,72 @@
                 </div>
             </div>
         </div>
-        <div class="row mietteitä">
-            <div class="col-8 text-white">
+    </div>
+    <div class="container">
+        <div class="row g-5 mietteitä">
+            <div class="col-md-8 text-white">
                 <h3>Mietteitä elämästä</h3>
 
+                <article class="blog-post webSivu" data-site="web-sivu1">
+                    <h2 class="blog-post-title mb-1">Web-sivu</h2>
+                    <p class="blog-post-meta">"Torstai 19.5.2022"</p>
+                    <p> Sehän olisi sitten torstai ja jatketaan taas työn parissa. Eilen saatiin vähän kuvaa tuonne
+                        persoona kohtaan tällä sivuston puolikkaalla. Saatiin modalikin laitettua sinne
+                        missä kuva tulee vähän paremmin esille. Otsikosta näkee mistä kyse ja kuva tosissaan on itse
+                        ottama screenshot. Siellä on nytten vielä kaksi sulkemis tapaa rasti oikeassa ylänurkassa ja
+                        close painike oikeassa alanurkassa.
+                        Näihin blogi teksteihin saatiin laitettua alkuun tuo "piilota" ja "lue lisää" ja se omasta
+                        mielestä vähän pomppi inhottavasti. Hetken aikaa tutkittua googlen tietopankkia niin löytyhän
+                        sieltä apuja ja saatiin laitettu transition tyylinen siirtymä.
+                        Olen siihen tällä hetkellä itse ainakin tyytyväinen ja "tavoitteet.js" näkyy sitten kommentti
+                        osiossa myös se toinen mitä olin tehnyt.<br><br>
+                        Vielä tähän blogi osioon olen miettinyt, jos tekisin jonkin sivu palkisto homman tähän
+                        kaveriksi. Kuitenkin tuolla oikealla olisi sillekkin tilaa. Archive tyylinen kirjasta mistä
+                        etsiä niitä postauksia.
+                        Osalla sivustoilla semmosta näytti olevan. Sieltä vois sitten pomppia postauksista, vaikka eri
+                        kuukausien välillä. Samalla myös tuli ajatus tuommosen paginaation lisäämisestä tuonne
+                        alas.<br><br>
+                        Aikaisemmassa postissa mietin albumia vaan se jää vielä hautumaan.
+
+                    </p>
+                    <button onclick="readMore('web-sivu1')" class="myBtn">Lue lisää</button>
+                </article>
+                <hr>
 
                 <article class="blog-post webSivu" data-site="web-sivu">
                     <h2 class="blog-post-title mb-1">Web-sivu</h2>
                     <p class="blog-post-meta">"Keskiviikko 18.5.2022"</p>
-                    <p>Noniin se olisi sitten kesviikko aamu.....kahvia....kyllä kahvia...Siitä se aamu lähtee ja aletaan työstämään tämän päivän suunnitelmaan sivuston edistämiseksi.
-                    Nettisivujen tekeminen on ollut omasta mielestä hyvinkin mieluista puuhaa tehdä. Saanu erilaista tekmistä ja suunnittelemista. Kyllähän se on pakko myöntää ,että ei tässä 
-                        olla mikään mestareiden mestari vielä pitkälläkään ajalla.<br><br> Aattelin tähän blogi postiin tuoda ilmi mitä ajatuksia ja mietintöjä olen kohdannut näitä sivustoja tehdessäni.
-                        Toukokuun 10 päivä ilmestyi ja aloitettiin väsäämään tätä sivusto hitaasti , mutta lapsen varmoin pienin askelin eteenpäin. Pitihän se ensin listata mitä kaikkea sitä täytys saada aikaseksi
-                        tähän sivustolle, että se nyt saatas suurten ihmismieltä huumaavien kriteerien alaisuudessa läpi. Ui suunnittelua harrastin omaan vihkoon ja piirtelin sinne mitä mieltä sykähdyttäviä kuvia ja ajatuksia sivuston ulkoasusta.
-                        Nooo jotain sinne päin ollaan tehty ja suunnitelmathan muuttuu aina ajan kanssa eiks niin ? Bootstrap elementtejä olen valinnut navbar, accordion, card ja buttoneita tähän mennessä.
-                        Vielä tässä mietintää mitä kaikkea sitä tahtos tähän blog hommaan tuoda ja suunnitelmissa olisi tälle päivää miettiä, jos jonkinlaisen albumin tekis harrastusten kohdalle.<br><br>
-                    
-                        Samalla tässä joutuu miettimään millä tavoin se oma javascriptin osaaminenkin voitaisiin tuoda esille. Albumin kautta vois tehdä kaikkea hassun hauskaa mouseover toimintoja eventtien kanssa.
-                        Rest hommaaki pitäisi suunnitella ja niitäkin on matkan varrella ollu taas useampia. Tähänki sivuston sivulle olen jättänyt tilaa, jos sinne vaikka liittelis hassun hauskan quote tekstin restin kautta, mutta vielä suunnitellaan.
-                        Onhan tässä vielä aikaaa... Oikeasti ei , mutta katsellaan. Näihinki vois miettiä kuhan tän kirjotuksen lopettaa tänne niin semmosen ,että näyttää osan tekstiä ja sitten BUUM lisää tulee ovista ja ikkunoista.
+                    <p>Noniin se olisi sitten kesviikko aamu.....kahvia....kyllä kahvia...Siitä se aamu lähtee ja
+                        aletaan työstämään tämän päivän suunnitelmaan sivuston edistämiseksi.
+                        Nettisivujen tekeminen on ollut omasta mielestä hyvinkin mieluista puuhaa tehdä. Saanu erilaista
+                        tekmistä ja suunnittelemista. Kyllähän se on pakko myöntää ,että ei tässä
+                        olla mikään mestareiden mestari vielä pitkälläkään ajalla.<br><br> Aattelin tähän blogi postiin
+                        tuoda ilmi mitä ajatuksia ja mietintöjä olen kohdannut näitä sivustoja tehdessäni.
+                        Toukokuun 10 päivä ilmestyi ja aloitettiin väsäämään tätä sivusto hitaasti , mutta lapsen
+                        varmoin pienin askelin eteenpäin. Pitihän se ensin listata mitä kaikkea sitä täytys saada
+                        aikaseksi
+                        tähän sivustolle, että se nyt saatas suurten ihmismieltä huumaavien kriteerien alaisuudessa
+                        läpi. Ui suunnittelua harrastin omaan vihkoon ja piirtelin sinne mitä mieltä sykähdyttäviä kuvia
+                        ja ajatuksia sivuston ulkoasusta.
+                        Nooo jotain sinne päin ollaan tehty ja suunnitelmathan muuttuu aina ajan kanssa eiks niin ?
+                        Bootstrap elementtejä olen valinnut navbar, accordion, card ja buttoneita tähän mennessä.
+                        Vielä tässä mietintää mitä kaikkea sitä tahtos tähän blog hommaan tuoda ja suunnitelmissa olisi
+                        tälle päivää miettiä, jos jonkinlaisen albumin tekis harrastusten kohdalle.<br><br>
+
+                        Samalla tässä joutuu miettimään millä tavoin se oma javascriptin osaaminenkin voitaisiin tuoda
+                        esille. Albumin kautta vois tehdä kaikkea hassun hauskaa mouseover toimintoja eventtien kanssa.
+                        Rest hommaaki pitäisi suunnitella ja niitäkin on matkan varrella ollu taas useampia. Tähänki
+                        sivuston sivulle olen jättänyt tilaa, jos sinne vaikka liittelis hassun hauskan quote tekstin
+                        restin kautta, mutta vielä suunnitellaan.
+                        Onhan tässä vielä aikaaa... Oikeasti ei , mutta katsellaan. Näihinki vois miettiä kuhan tän
+                        kirjotuksen lopettaa tänne niin semmosen ,että näyttää osan tekstiä ja sitten BUUM lisää tulee
+                        ovista ja ikkunoista.
                     </p>
                     <button onclick="readMore('web-sivu')" class="myBtn">Lue lisää</button>
                 </article>
                 <hr>
-                
-                <article class="blog-post pelikehitys"data-site="pelikehitys">
+
+                <article class="blog-post pelikehitys" data-site="pelikehitys">
                     <h2 class="blog-post-title mb-1">Pelikehitys</h2>
                     <p class="blog-post-meta">"Tiistai 17.5.2022"</p>
                     <p>Pelipuolen hommat kiinnostaa itseä kovasti tällä hetkellä. Pelien parissa on tullut pienenstä
@@ -119,7 +160,7 @@
                         Kuitenkin on aina ollut kiinnostus miten tuommoinen peli on ylipäätänsä saatu tehtyä ja mitä
                         kaikkea niissä on pitänyt ottaa huomioon.<br><br>
                         Eihän tuonkaan pelin alkutaival mitenkään bugittomana ole lähtenyt.
-                    Pelien tekemisestä ei ole mitään ajatusta, mutta tässä kesällä olen ajatellut käydä campusonline
+                        Pelien tekemisestä ei ole mitään ajatusta, mutta tässä kesällä olen ajatellut käydä campusonline
                         nonstop kurssin unitystä. Saisin ensimakua siitä pelin tekemisestä ja näkisin samalla mitä
                         kaikkea se vaatii.
                         Tavotteissa on ainakin kesän aikana tutusta tuohon unityyn ja lähteä kokeilemaan itse ohjelmaa
@@ -128,80 +169,130 @@
                         ohjattua toimintaa niin se ainakin omasta mielestä helpottaa alkuun lähtemistä.
                         Youtuben kautta voi lähteä etsimäänn sitten lisää tutoriaaleja ja netti on kyllä nykyyän täynnä
                         yhtä , jos sun toista.<br><br>
-                    
-                    Sitten ois myös tuo unreal engine , mutta ainakin isompien huhupuheiden mukaan unitystä olisi
+
+                        Sitten ois myös tuo unreal engine , mutta ainakin isompien huhupuheiden mukaan unitystä olisi
                         helpompi lähteä liikkeelle näin alkajaisiksi.</p>
-                        <button onclick="readMore('pelikehitys')" class="myBtn">Lue lisää</button>
+                    <button onclick="readMore('pelikehitys')" class="myBtn">Lue lisää</button>
                 </article>
                 <hr>
-            
-              
+
+
+            </div>
+        
+        <div class="col-md-4">
+            <div class="sticky">
+                <div class="p-4 pt-2">
+                    <h4>Lupaus kontentista</h4>
+                    <ol>
+                        <li><a href="#">Tammikuu 2021</a></li>
+                        <li><a href="#">Helmikuu 2021</a></li>
+                        <li><a href="#">Maaliskuu 2021</a></li>
+                        <li><a href="#">Huhtikuu 2021</a></li>
+                        <li><a href="#">Toukokuu 2021</a></li>
+                        <li><a href="#">Kesäkuu 2021</a></li>
+                        <li><a href="#">Heinäkuu 2021</a></li>
+                        <li><a href="#">Elokuu 2021</a></li>
+                        <li><a href="#">Syyskuu 2021</a></li>
+                        <li><a href="#">Lokakuu 2021</a></li>
+                        <li><a href="#">Marraskuu 2021</a></li>
+                        <li><a href="#">Joulukuu 2021</a></li>
+
+                    </ol>
+
+                </div>
+                <div class="p-4">
+                    <h4>Muita sivuja</h4>
+                    <ol>
+                        <li><a href="https://github.com/TomiValtanen/Web-Tekniikat-2022">GitHub</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
+        
+    </div>
+    </div>
+    <div class="container">
         <div class="row persoona">
             <div class="col text-white">
-                    <h1 class="text-center">Kuka olen</h1>
-                    <p>Olen alun perin Kainuusta kotoisin oleva ukkeli. Useampi eri ammatti on tullut opiskeltua ja armeijassa käytyä. 
-                        Nyt olen päässyt tradenomi linjalle opiskelemaan ja olen kyllä todella paljon tykännyt tästä. Monimuoto opiskelua ja iltapainotteista. Itselle tämä malli tuntuu toimivan paremmin
-                        kuin päiväopiskelu. Ensimmäinen projekti nettisivun parissa on saatu purkkiin ja siitä jäi hyvä mieli ja asioita missä haluaa parantaa jatkossa.
-                        Peliala kiinnostaisi kovasti , mutta sivustojen tekeminen on ollut myös todella hauskaa.
-                    </p>
-                    <h2 class="text-center">Harrastukset</h2>
-                    <h3>Pelaaminen</h3>
-                    <p class="img-text"><img id="wow" class="mx-0 mx-sm-5" src="./images/Tämä.jpg"> Tietokonepelejä on tullut aina pelailtua ja ihmeteltyä. World of Warcraft on ollut se mitä olen
-                        pelannut enemmän.Sitten tietenkin muutamia muita, jotka ovat olleet hyviä mm. Conan the Exiles,
-                        Hollow knight ja Monster hunter world. Samalla myös lautapelejä on tullut välistä pelailtua ja nuorempana warhammeria.
-                    </p>
-                    <p>Pelaaminen lähti itseltä , kun isä osti 8-bittisen nintendon kirpparilta ja taisin silloin olla jotain 6 vuotias. Super Mario 1, 2 ja 3 löytyivät silloin ja niitä oli hauska pelata.
-                        Tottakai duck hunt löytyi ja pistooli. Eihän sitä vieläkään voi unohtaa , kun ampui ohi ja "SE" koira nousi puskasta ja alkoi nauramaan....aivan loistaa.
-                        Ainahan sitä piti päästä omaa isää haastamaan yleisurheilu pelissä , missä piti hakata nappulaa niin nopeata kuin pystyi. Parasta oli vaan nähdä ku ei se isä ukko armoa antanu
-                        hakkas sitä nappia ku hullu ja voitti. Muutamia vuosia takaperin tuli kaivettua vanhemmilla konsoli ja koitettua pelata sitä itsekseen, muistiin oli jäänyt kyseinen kohta siinä urheilu pelissä mikä tuntui silloin todella hankalalta.
-                        Siinä oli korkeushyppy ja sehän oli Tomi 6v:lle tosi haastava ja en tainnu siinä koskaan onnistua tiputtamatta rimaa. Nyt kuitenkin sen sai läpi ja olihan se omalla tavallaan hieno tunne. Samalla piti pelata muita pelejä läpi mitä oli nuoruudessa jäänyt pelaamatta.
-                    </p>
-                    <h3>Mikä pelaamisessa kiehtoo?</h3>
-                    <p>Itselle aina pelaaminen on ollu hauskaa ajan vietettä ja yhdessä olemista. Sen kautta on aina pystyny nollaamaan omat aivot ja tekemään jotain kaverien kanssa, jotka nytkin asuvat eripuolilla suomea.
-                    </p>
-                    <h3>Luonnossa liikkuminen</h3>
-                    <p>Muutaman kerran olen käynyt vaelluksella, mutta muuten luonnossa liikkuminen ja eräily on ollut rauhouttavaa.
-                        Maastopyöräilyä tullut harrastettua myös ja se on ollut kivaa. Eniten noissa kiinnostaa se vapaus mennä ja valita omat reitit ja katsella ympärilleen.
+                <h1 class="text-center">Kuka olen</h1>
+                <p>Olen alun perin Kainuusta kotoisin oleva ukkeli. Useampi eri ammatti on tullut opiskeltua ja
+                    armeijassa käytyä.
+                    Nyt olen päässyt tradenomi linjalle opiskelemaan ja olen kyllä todella paljon tykännyt tästä.
+                    Monimuoto opiskelua ja iltapainotteista. Itselle tämä malli tuntuu toimivan paremmin
+                    kuin päiväopiskelu. Ensimmäinen projekti nettisivun parissa on saatu purkkiin ja siitä jäi hyvä
+                    mieli ja asioita missä haluaa parantaa jatkossa.
+                    Peliala kiinnostaisi kovasti , mutta sivustojen tekeminen on ollut myös todella hauskaa.
+                </p>
+                <h2 class="text-center">Harrastukset</h2>
+                <h3>Pelaaminen</h3>
+                <p class="img-text"><img id="wow" class="mx-0 mx-sm-5" src="./images/Tämä.jpg" alt="screenshot">
+                    Tietokonepelejä on tullut aina pelailtua ja ihmeteltyä. World of Warcraft on ollut se mitä olen
+                    pelannut enemmän.Sitten tietenkin muutamia muita, jotka ovat olleet hyviä mm. Conan the Exiles,
+                    Hollow knight ja Monster hunter world. Samalla myös lautapelejä on tullut välistä pelailtua ja
+                    nuorempana warhammeria.
+                </p>
+                <p>Pelaaminen lähti itseltä , kun isä osti 8-bittisen nintendon kirpparilta ja taisin silloin olla
+                    jotain 6 vuotias. Super Mario 1, 2 ja 3 löytyivät silloin ja niitä oli hauska pelata.
+                    Tottakai duck hunt löytyi ja pistooli. Eihän sitä vieläkään voi unohtaa , kun ampui ohi ja "SE"
+                    koira nousi puskasta ja alkoi nauramaan....aivan loistaa.
+                    Ainahan sitä piti päästä omaa isää haastamaan yleisurheilu pelissä , missä piti hakata nappulaa niin
+                    nopeata kuin pystyi. Parasta oli vaan nähdä ku ei se isä ukko armoa antanu
+                    hakkas sitä nappia ku hullu ja voitti. Muutamia vuosia takaperin tuli kaivettua vanhemmilla konsoli
+                    ja koitettua pelata sitä itsekseen, muistiin oli jäänyt kyseinen kohta siinä urheilu pelissä mikä
+                    tuntui silloin todella hankalalta.
+                    Siinä oli korkeushyppy ja sehän oli Tomi 6v:lle tosi haastava ja en tainnu siinä koskaan onnistua
+                    tiputtamatta rimaa. Nyt kuitenkin sen sai läpi ja olihan se omalla tavallaan hieno tunne. Samalla
+                    piti pelata muita pelejä läpi mitä oli nuoruudessa jäänyt pelaamatta.
+                </p>
+                <h3>Mikä pelaamisessa kiehtoo?</h3>
+                <p>Itselle aina pelaaminen on ollu hauskaa ajan vietettä ja yhdessä olemista. Sen kautta on aina pystyny
+                    nollaamaan omat aivot ja tekemään jotain kaverien kanssa, jotka nytkin asuvat eripuolilla suomea.
+                </p>
+                <h3>Luonnossa liikkuminen</h3>
+                <p>Muutaman kerran olen käynyt vaelluksella, mutta muuten luonnossa liikkuminen ja eräily on ollut
+                    rauhouttavaa.
+                    Maastopyöräilyä tullut harrastettua myös ja se on ollut kivaa. Eniten noissa kiinnostaa se vapaus
+                    mennä ja valita omat reitit ja katsella ympärilleen.
 
-                    </p>
-                    <div class="modal" tabindex="-1">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
+                </p>
+                <div class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title text-warning">World of Warcraft : Battle for Azeroth</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                <h5 class="modal-title text-warning">World of Warcraft : Battle for Azeroth</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <img class="modal-content" id="img01">
+                                <img class="modal-content" src="" id="img01" alt="wow">
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                             
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    
-
-
-                    
+                    </div>
+                </div>
 
 
 
-                </article>
+
+
+
+
+
 
             </div>
 
         </div>
     </div>
 
-    </div>
+
     <div class="container">
         <footer class="py-3 my-3">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <il class="nav-item"><a href="#" class="nav-link px-2 link-light">Takaisin ylös</a></il>
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-light">Takaisin ylös</a></li>
 
 
             </ul>

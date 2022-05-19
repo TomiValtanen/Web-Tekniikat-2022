@@ -12,7 +12,7 @@ function openPersoona() {
 
 function openMietteitä() {
     document.querySelector("div.persoona").style.display = "none";
-    document.querySelector("div.mietteitä").style.display = "block";
+    document.querySelector("div.mietteitä").style.display = "flex";
 }
 
 /*Tälläistä myös olin ajatellut , mutta laitoin sitten tuon toisen kun tahoin transition 
