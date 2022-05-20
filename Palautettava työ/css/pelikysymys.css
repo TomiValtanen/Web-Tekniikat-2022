@@ -17,6 +17,9 @@ h3{
     color: orange;
     border-bottom: darkmagenta 1px solid;
 }
+ul{
+    padding-left: 0px;
+}
 span div img{
     display: inline-block;
     width: 100px;
@@ -47,9 +50,7 @@ button:hover{
 .sticky{
     position: sticky;
     top: 0;
-
- 
-    
+  
     
 }
 .sticky h4{
@@ -73,13 +74,19 @@ button:hover{
     color: orange;
 }
 .tabs{
-    float: right;
+    float: left;
     text-align: center;
     display: grid;
     grid-template-columns:repeat(4 ,1fr) ;
     border-top: darkmagenta 1px solid;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-top: 20px;
+    
 }
+
 .first:hover,.previous:hover,.next:hover,.last:hover{
     color: orange;
     cursor: pointer;
+    text-decoration: underline;
 }
