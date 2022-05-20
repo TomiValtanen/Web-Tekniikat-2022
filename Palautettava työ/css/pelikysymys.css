@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right bottom, black 55%, rgb(97, 0, 92));
+}
+h1, h2{
+    color: orange;
+    padding-top: 15px;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+h3{
+    color: orange;
+    border-bottom: darkmagenta 1px solid;
+}
+span div img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.mietteitä{
+    display: flex;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+button:hover{
+    color: darkmagenta;
+}
+.blog-post p:nth-child(3){
+    overflow: hidden;
+    transition: max-height 1s;
+    max-height: 75px;
+}
+.blog-post p:nth-child(3).collapsePara{
+    max-height: 600px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+
+ 
+    
+    
+}
+.sticky h4{
+    color: orange;
+    text-decoration: underline;
+}
+.sticky ol{
+    margin: 0px;
+    padding-left: 0px;
+}
+.sticky li{
+    list-style: none;
+    margin: 0px;
+}
+.sticky a{
+    color: rgb(197, 68, 197);
+    font-size: 18px;
+    
+}
+.sticky a:hover{
+    color: orange;
+}
+.tabs{
+    float: right;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(4 ,1fr) ;
+    border-top: darkmagenta 1px solid;
+}
+.first:hover,.previous:hover,.next:hover,.last:hover{
+    color: orange;
+    cursor: pointer;
+}
