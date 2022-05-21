@@ -12,17 +12,29 @@ let palikat = [
         h2: [],
         pDate: [],
         pText: [],
-        buttons:[],
+        buttons: [],
+        hori: [],
+        kysymys: [],
 
     }
-]
+];
+
 
 let page = 0;
 
+fetch('https://programming-quotes-api.herokuapp.com/quotes/random')
+    .then(response => response.json())
+    .then(data => {
+        document.querySelector("#randomQuote").textContent = data.en;
+        document.querySelector("#author").textContent = data.author;
+
+    }
+    );
+
 for (let i = 1; i <= 50; i++) {
     let articlee = document.createElement("article");
-    let k= -1+i;
-    articlee.id = "mallikas"+k;
+    let k = -1 + i;
+    articlee.id = "mallikas" + k;
     articlee.classList.add("blog-post");
     palikat[0].article.push(articlee);
     let h2 = document.createElement("h2");
@@ -36,10 +48,12 @@ for (let i = 1; i <= 50; i++) {
     palikat[0].pDate.push(pDat);
     palikat[0].pText.push(pTex);
     pDat.classList.add("blog-post-meta");
-    let button=document.createElement("button");
-    button.textContent="Lue Lisää";
+    let button = document.createElement("button");
+    button.textContent = "Lue Lisää";
     button.classList.add("myBtn");
     palikat[0].buttons.push(button);
+    let horiLine = document.createElement("hr");
+    palikat[0].hori.push(horiLine);
 
 }
 
@@ -49,24 +63,25 @@ for (let i = 0; i < page + 5; i++) {
     palikat[0].article[i].appendChild(palikat[0].pDate[i]);
     palikat[0].article[i].appendChild(palikat[0].pText[i]);
     palikat[0].article[i].appendChild(palikat[0].buttons[i]);
-    palikat[0].buttons[i].onclick=function () {readMore('#mallikas'+[i])};
+    palikat[0].buttons[i].onclick = function () { readMore('#mallikas' + [i]) };
+    taskList.appendChild(palikat[0].hori[i]);
 
 
 
 
 
 }
-function readMore(id){
+function readMore(id) {
     let p = document.querySelector(`${id} p:nth-child(3)`);
     console.log(p);
     let btnText = document.querySelector(`${id} .myBtn`);
-    if (p.classList.contains('collapsePara')===false) {
+    if (p.classList.contains('collapsePara') === false) {
         p.classList.add('collapsePara');
         btnText.innerHTML = "Piilota";
-      } else {
+    } else {
         p.classList.remove('collapsePara');
         btnText.innerHTML = "Lue lisää";
-      }
+    }
 }
 
 next.addEventListener("click", nextBtn);
@@ -85,7 +100,8 @@ function nextBtn() {
         palikat[0].article[i].appendChild(palikat[0].pDate[i]);
         palikat[0].article[i].appendChild(palikat[0].pText[i]);
         palikat[0].article[i].appendChild(palikat[0].buttons[i]);
-        palikat[0].buttons[i].onclick=function () {readMore('#mallikas'+[i])};
+        palikat[0].buttons[i].onclick = function () { readMore('#mallikas' + [i]) };
+        taskList.appendChild(palikat[0].hori[i]);
     }
 }
 previous.addEventListener("click", previousBtn);
@@ -104,7 +120,8 @@ function previousBtn() {
         palikat[0].article[i].appendChild(palikat[0].pDate[i]);
         palikat[0].article[i].appendChild(palikat[0].pText[i]);
         palikat[0].article[i].appendChild(palikat[0].buttons[i]);
-        palikat[0].buttons[i].onclick=function () {readMore('#mallikas'+[i])};
+        palikat[0].buttons[i].onclick = function () { readMore('#mallikas' + [i]) };
+        taskList.appendChild(palikat[0].hori[i]);
     }
 }
 
@@ -119,7 +136,8 @@ function firstBtn() {
         palikat[0].article[i].appendChild(palikat[0].pDate[i]);
         palikat[0].article[i].appendChild(palikat[0].pText[i]);
         palikat[0].article[i].appendChild(palikat[0].buttons[i]);
-        palikat[0].buttons[i].onclick=function () {readMore('#mallikas'+[i])};
+        palikat[0].buttons[i].onclick = function () { readMore('#mallikas' + [i]) };
+        taskList.appendChild(palikat[0].hori[i]);
     }
 }
 last.addEventListener("click", lastBtn);
@@ -128,11 +146,12 @@ function lastBtn() {
     taskList.innerHTML = "";
     for (let i = page; i < page + 5; i++) {
         taskList.appendChild(palikat[0].article[i]);
-    palikat[0].article[i].appendChild(palikat[0].h2[i]);
-    palikat[0].article[i].appendChild(palikat[0].pDate[i]);
-    palikat[0].article[i].appendChild(palikat[0].pText[i]);
-    palikat[0].article[i].appendChild(palikat[0].buttons[i]);
-    palikat[0].buttons[i].onclick=function () {readMore('#mallikas'+[i])};
+        palikat[0].article[i].appendChild(palikat[0].h2[i]);
+        palikat[0].article[i].appendChild(palikat[0].pDate[i]);
+        palikat[0].article[i].appendChild(palikat[0].pText[i]);
+        palikat[0].article[i].appendChild(palikat[0].buttons[i]);
+        palikat[0].buttons[i].onclick = function () { readMore('#mallikas' + [i]) };
+        taskList.appendChild(palikat[0].hori[i]);
     }
 }
 
