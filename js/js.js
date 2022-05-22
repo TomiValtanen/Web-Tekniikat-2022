@@ -1,5 +1,5 @@
 
-
+// olio missä on työkokemuksen card palaset.
 let workPlaces = [
     {
         workPlaceName: "Ristijärven rakennus oy",
@@ -45,10 +45,12 @@ let workPlaces = [
         class:"muu",
     }
 ];
-
+//queryselector ja eventlisteneri , clikc
 let button = document.querySelector("#section3 button");
 button.addEventListener("click", workExp);
-
+/*funktio painetaan nappia ja annetaan uus display sille ja formille myös
+myös tehdään span jolle annetaan id.
+*/
 function workExp() {
 
     button.style.display = "none";
@@ -57,7 +59,7 @@ function workExp() {
     let divWork = document.querySelector("#section3");
     let span = document.createElement("span");
     span.id = "workStuff";
-
+    // tehdään palikoita annettu tässä class arvot ja otettaan arraysta halutut asiat. Tekee arrayn.length verran.
     let newDiv = '<div class="row row-cols-1 row row-cols-sm-2 row-cols-lg-3  row-cols-xxl-4 my-3 mx-0 mx-md-5 ">';
     for (let i = 0; i < workPlaces.length; i++) {
         newDiv += '<div class="col my-3 my-sm-1">'; 
@@ -71,7 +73,7 @@ function workExp() {
         newDiv += "</div>";
     };
     newDiv += "</div>";
-
+//liitetään spanni section3 ja innerhtml tehdyt div ottaa täällä tehdyistä diveistä queryselectorilla hommat talteen ja puskee ne uuteen arrayhin
     divWork.appendChild(span);
     document.getElementById("workStuff").innerHTML = newDiv;
     let cardDiv= document.querySelectorAll("#workStuff div.col");
@@ -81,14 +83,16 @@ function workExp() {
     
     
 }
-let cardDivArray=[];
 
+let cardDivArray=[];
+// queryselector formille ainakun tulee muutos niin eventlistener toimii.
 let form= document.querySelector("form");
 form.addEventListener("change",formInput);
 
+//funktio formin muutoksille.
 function formInput(event){
     
-
+// ottaa muutoksen tullen painetun id ja tarkastaa sen onko mikä ja sen mukaan antaa näkyville halutut.
 if (event.target.id=="hoitaja"){
     for(let i=0; i<workPlaces.length;i++){
         if(workPlaces[i].class=="lähihoitaja"){
