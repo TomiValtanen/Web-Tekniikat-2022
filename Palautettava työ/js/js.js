@@ -56,7 +56,7 @@ function workExp() {
 
     let divWork = document.querySelector("#section3");
     let span = document.createElement("span");
-    span.id = "työhommat";
+    span.id = "workStuff";
 
     let newDiv = '<div class="row row-cols-1 row row-cols-sm-2 row-cols-lg-3  row-cols-xxl-4 my-3 mx-0 mx-md-5 ">';
     for (let i = 0; i < workPlaces.length; i++) {
@@ -73,8 +73,8 @@ function workExp() {
     newDiv += "</div>";
 
     divWork.appendChild(span);
-    document.getElementById("työhommat").innerHTML = newDiv;
-    let cardDiv= document.querySelectorAll("#työhommat div.col");
+    document.getElementById("workStuff").innerHTML = newDiv;
+    let cardDiv= document.querySelectorAll("#workStuff div.col");
     for (let i=0;i<cardDiv.length;i++){
         cardDivArray.push(cardDiv[i]);
     }

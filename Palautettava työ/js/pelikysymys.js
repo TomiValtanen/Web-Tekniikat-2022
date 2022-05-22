@@ -14,7 +14,7 @@ let palikat = [
         pText: [],
         buttons: [],
         hori: [],
-        kysymys: [],
+      
 
     }
 ];

@@ -189,7 +189,7 @@ body p {
   animation-timing-function: linear;
 }
 
-#työhommat p {
+#workStuff p {
   text-align: left;
   background: linear-gradient(to bottom, rgb(255, 224, 165), rgb(255, 236, 200));
   color: black;
@@ -199,13 +199,13 @@ body p {
   margin: 5px;
   width: auto;
 }
-#työhommat h5 {
+#workStuff h5 {
   text-align: center;
   border-bottom: black 1px solid;
   font-weight: bolder;
   padding-bottom: 3px;
 }
-#työhommat h6 {
+#workStuff h6 {
   text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -238,7 +238,7 @@ footer a {
   }
 }
 @media (max-width: 340px) {
-  #työhommat p {
+  #workStuff p {
     hyphens: auto;
     font-size: 15px;
     height: 180px;

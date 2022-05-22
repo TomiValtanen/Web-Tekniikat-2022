@@ -226,7 +226,7 @@ body {
     }
 }
 
-#työhommat {
+#workStuff {
     p {
         text-align: left;
         background: linear-gradient(to bottom, rgb(255, 224, 165), rgb(255, 236, 200));
@@ -291,7 +291,7 @@ footer{
 }
 
 @media (max-width:340px) {
-    #työhommat {
+    #workStuff {
         p {
             hyphens: auto;
             font-size: $base-font-size - 1px;
