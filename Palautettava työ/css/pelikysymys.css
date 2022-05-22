@@ -7,7 +7,10 @@ body {
 }
 h1, h2{
     color: orange;
-    padding-top: 15px;
+        padding-top: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight:bolder;
+        text-decoration: underline;
 }
 
 .carousel-item img{
@@ -83,6 +86,12 @@ button:hover{
     padding-top: 10px;
     margin-top: 20px;
     
+}
+@media screen and (max-width:340px){
+    .tabs{
+    font-size: 14px;
+    
+}
 }
 
 .first:hover,.previous:hover,.next:hover,.last:hover{

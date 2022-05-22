@@ -9,6 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/23abaa8a95.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
   <!--<link rel="stylesheet" href="./css/style.css">-->
   <link rel="stylesheet" href="./css/scss/etusivu-styles.css">
 </head>
@@ -32,9 +35,6 @@
           <li class="nav-item pe-5">
             <a class="nav-link active" href="#section3">Työkokemus</a>
           </li>
-          <li class="nav-item pe-5">
-            <a class="nav-link active" href="#section4">Osaaminen</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -42,8 +42,8 @@
   <div class="container-fluid first-custom min-vh-100">
     <div class="row">
       <div class="col">
-        <h1 class="intro-h1">Tomi Valtanen</h1>
-        <p class="intro-custom">Hei olen tietojenkäsittely tradenomi opiskelija. Tällä sivustolla tulen kertomaan
+        <h1>Tomi Valtanen</h1>
+        <p>Hei olen tietojenkäsittely tradenomi opiskelija. Tällä sivustolla tulen kertomaan
           omista tavoitteistani , koulutuksestani, työkokemuksesta ja koulussa opituista menetelmistä.
           Tämä on harjoitus portfolio itselle, erilaisilla kokeiluilla ja miltä asiat näyttävät. Osaan aiheista en
           välttämättä ole keksinyt kaikkea mitä kirjoittaa ja siitä syystä osa teksteistä voi olla lyhkäisiä.
@@ -52,14 +52,14 @@
         </p>
         <div class="animation-container">
           <div class="elements">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="d-none d-lg-block"></div>
+            <div class="d-none d-lg-block"></div>
+            <div class="d-none d-md-block"></div>
+            <div class="d-none d-sm-block"></div>
+            <div class="d-none d-lg-block"></div>
+            <div class="d-none d-lg-block"></div>
+            <div class="d-none d-sm-block"></div>
+            <div class="d-none d-md-block"></div>
 
 
 
@@ -72,15 +72,16 @@
       </div>
     </div>
   </div>
-  <div  class="container-fluid tavoitteet">
+  <div class="container-fluid tavoitteet">
     <div id="section1" class="row">
-      <div  class="col-12 mt-5">
-        <h1 class="text-center">Mietteitä elämästä Blog</h1>
+      <div class="col-12 mt-5">
+        <h1 class="text-center pb-3">Mietteitä elämästä Blog</h1>
         <p class="text-center mx-sm-5 mx-1">Aikaisempaa kokemusta ei itselläni ole alalta. Koodaaminen on kiinnostanut
           pitemmän aikaa
           ja nyt siihen sain tilaisuuden
           tämän koulutuksen kautta. Itselle erilaiset pelit ovat olleet lähellä sydäntä aina ja kiinnostus olisi päästä
-          kokeilemaan sitä ja nähdä miten se onnistuu. Alta klikkaamalla pääset lukemaan tarkemmin omista ajatuksistani pelienkehityksen, web-sivujen ja harrastusten saralta.
+          kokeilemaan sitä ja nähdä miten se onnistuu. Alta klikkaamalla pääset lukemaan tarkemmin omista ajatuksistani
+          pelienkehityksen, web-sivujen ja harrastusten saralta.
         </p>
         <a class="btn" href="./pages/persoona.html" role="button">Lue lisää</a>
       </div>
@@ -88,7 +89,7 @@
     <div class="row row-cols-1 row-cols-md-3 mt-5">
 
       <div class="col">
-        <div class="card p-3">
+        <div class="card p-3 m-2">
           <img class="card-img-top card-image" src="./images/controller-g172d03d36_640.png" alt="controller">
           <div class="card-body">
             <h3 class="text-center">Pelienkehitys</h3>
@@ -99,7 +100,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card p-3">
+        <div class="card p-3 m-2">
           <img class="card-img-top card-image" src="./images/laptop-gcc2da8694_640.png" alt="laptop">
           <div class="card-body ">
             <h3 class="text-center">web-sivujen kehitys</h3>
@@ -109,7 +110,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card p-3">
+        <div class="card p-3 m-2">
           <img class="card-img-top card-image" id="controllerImg" src="./images/controller-g172d03d36_640.png"
             alt="controller">
           <div class="card-body">
@@ -122,8 +123,8 @@
   </div>
   <div class="container-fluid">
     <div id="section2" class="row">
-      <div  class="col koulutus mt-5 ">
-        <h1 class="text-center">Koulutus</h1>
+      <div class="col koulutus mt-5 ">
+        <h1 class="text-center pb-3">Koulutus</h1>
         <p class="text-center mx-sm-5 mx-1"> Koulutuksesta lyhyesti tässä. Olen käynyt ensimmäisenä koulutuksenani
           kaksois tutkinnon ja ammatillinen puoli siellä oli rakennusala. Armeijessa pääsin kokeilemaan hammashoitajan
           hommia
@@ -133,7 +134,7 @@
           suorittanut kyseisiä opintoja ja tarkennuksia.
         </p>
         <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item accordion-custom mx-auto">
+          <div class="accordion-item accordion-custom mx-1 mx-sm-auto">
             <h2 class="accordion-header " id="panelsStayOpen-headingOne">
               <button class="accordion-button collapsed header-custom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
@@ -175,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item accordion-custom mx-auto">
+          <div class="accordion-item accordion-custom mx-1 mx-sm-auto">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button class="accordion-button collapsed header-custom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
@@ -190,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item accordion-custom mx-auto">
+          <div class="accordion-item accordion-custom mx-1 mx-sm-auto">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
               <button class="accordion-button collapsed header-custom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
@@ -214,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item accordion-custom mx-auto">
+          <div class="accordion-item accordion-custom mx-1 mx-sm-auto">
             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
               <button class="accordion-button collapsed header-custom" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -258,8 +259,8 @@
   </div>
   <div class="container-fluid työkokemus">
     <div id="section3" class="row">
-      <div  class="col mt-5">
-        <h1 class="text-center">Työkokemus</h1>
+      <div class="col mt-5">
+        <h1 class="text-center pb-3">Työkokemus</h1>
         <p class="text-center mx-sm-5 mx-1">Työkokemuksesta lyhyesti tässä. Kaikenlaista on tullut kokeiltua ja
           ihmeteltyä vuosien aikana. Rakennuksilla olen ollut vähäisesti töissä ja siellä se oli enempi
           kesätyö hommia ennen armeijaa. Armeijassa olin lääkintamiehenä 9 kuukautta erilaisissa tehtävissä mm.
@@ -283,51 +284,13 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid osaaminen">
-    <div id="section4"class="row">
-      <div  class="col mt-5">
-        <h1 class="text-center">Osaaminen</h1>
-        <p class="text-center mx-sm-5 mx-1">Tämän hetkistä osaamista , mitä olen oppinut tradenomi opintojeni aikana ja
-          asioita mitä olemme tunnilla
-          tehneet.</p>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2">
-
-      <div class="col">
-        <div class="card p-3">
-          <img class="card-img-top osaaminen-card-image" src="./images/logo-gf1e6e02d9_640.png" alt="controller">
-          <div class="card-body">
-            <h3 class="text-center">Html / Css</h3>
-            <p class="card-text">Itsellä ei ole juurikaan tietoa miten tämä itse prosessi menee ja mitä kaikkea se
-              sisältää.
-            </p>
-            <button class="btn" type="button">Lue lisää</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card p-3">
-          <img class="card-img-top osaaminen-card-image" src="./images/javascript-ged095749f_640.png" alt="controller">
-          <div class="card-body">
-            <h3 class="text-center">Javascript</h3>
-            <p class="card-text">Itsellä ei ole juurikaan tietoa miten tämä itse prosessi menee ja mitä kaikkea se
-              sisältää.
-            </p>
-            <button class="btn" type="button">Lue lisää</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="container">
     <footer class="py-3 my-3">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <il class="nav-item"><a href="#" class="nav-link px-2 link-light">Alkuun</a></il>
         <il class="nav-item"><a href="#section1" class="nav-link px-2 link-light">Tavoitteet</a></il>
-        <il class="nav-item"><a href="#section2" class="nav-link px-2  link-light">Koulutus</a></il>
+        <il class="nav-item"><a href="#section2" class="nav-link px-2 link-light">Koulutus</a></il>
         <il class="nav-item"><a href="#section3" class="nav-link px-2 link-light">Työkokemus</a></il>
-        <il class="nav-item"><a href="#section4" class="nav-link px-2 link-light">Osaaminen</a></il>
 
       </ul>
       <p class="text-center">© 2022 , Tietojenkäsittely tradenomi</p>
