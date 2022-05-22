@@ -292,6 +292,11 @@ footer{
 }
 
 @media (max-width:340px) {
+    body{
+    p{
+        font-size: $base-font-size;
+    }
+}
     #workStuff {
         p {
             hyphens: auto;
@@ -301,9 +306,15 @@ footer{
     }
 
     .first-custom {
-        p {
-            margin: 0;
+        h1 {
+            top: 10%;
+        }
 
+        p {
+            text-align: left;
+            top: 20%;
+            margin-right: 0px;
+            
         }
     }
 

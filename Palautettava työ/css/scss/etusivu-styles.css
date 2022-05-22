@@ -239,14 +239,23 @@ footer a {
   }
 }
 @media (max-width: 340px) {
+  body p {
+    font-size: 16px;
+  }
+
   #workStuff p {
     hyphens: auto;
     font-size: 15px;
     height: 180px;
   }
 
+  .first-custom h1 {
+    top: 10%;
+  }
   .first-custom p {
-    margin: 0;
+    text-align: left;
+    top: 20%;
+    margin-right: 0px;
   }
 
   .accordion-custom {
