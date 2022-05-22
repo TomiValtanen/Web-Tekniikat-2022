@@ -276,5 +276,23 @@ footer a {
     hyphens: auto;
   }
 }
+@media (max-width: 550px) {
+  .first-custom h1 {
+    top: 10%;
+  }
+  .first-custom p {
+    text-align: left;
+    top: 20%;
+    margin-right: 25%;
+  }
+
+  .accordion-custom {
+    hyphens: auto;
+    width: 100%;
+  }
+  .accordion-body p {
+    hyphens: auto;
+  }
+}
 
 /*# sourceMappingURL=etusivu-styles.css.map */
