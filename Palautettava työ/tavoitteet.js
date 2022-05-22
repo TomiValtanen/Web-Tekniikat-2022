@@ -23,6 +23,14 @@
         moreText.style.display = "inline";
     }
 }*/
+fetch('https://programming-quotes-api.herokuapp.com/quotes/random')
+    .then(response => response.json())
+    .then(data => {
+        document.querySelector("#randomQuote").textContent = data.en;
+        document.querySelector("#author").textContent = data.author;
+
+    }
+    );
 function readMore(site){
     let p = document.querySelector(`.blog-post[data-site="${site}"] p:nth-child(3)`);
     let btnText = document.querySelector(`.blog-post[data-site="${site}"] .myBtn`);
