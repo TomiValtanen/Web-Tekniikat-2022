@@ -119,3 +119,9 @@ button:hover{
       height: 100%;
       filter: blur(2px);
   }
+  @media screen and (max-width:1200px){
+ 
+    .blog-post p:nth-child(3).collapsePara{
+        max-height: 1000px;
+    }
+  }
